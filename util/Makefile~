@@ -1,0 +1,10 @@
+CINCLUDES=-I.. -I../box
+
+all: 	../infoind ../learnind
+
+../learnind: learnind.o
+	$(CC) -o ../learnind learnind.o
+
+../infoind: infoind.o
+	$(CC) -o ../infoind infoind.o
+
